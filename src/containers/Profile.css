@@ -1,0 +1,126 @@
+/*header and first div*/
+.about-user {
+    text-align: center;
+    margin-top: -3em;
+}
+
+#user-pic{
+    height: 130px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+}
+
+.about-info{
+    background-color: #FFC82C;
+    margin-top: -4em;
+    color: #47525E;
+}
+
+.user-name{
+    padding-top: 2em;
+    font-size: 2.5em;
+}
+
+.user-status{
+    font-size: 1em;
+    padding: 0 4em 2em 4em;
+}
+
+/*second div*/
+.profile-record {
+    margin: 4em 0;
+    text-align: center;
+}
+
+.total {
+    background: #00A6FF;
+    color: #FFF;
+}
+
+.win {
+    background: #77D353;
+}
+
+.rate {
+    background: #F95F62;
+}
+
+.record-div{
+    width: 120px;
+    height: 120px;
+    font-size: 1.8em;
+}
+
+.record-div > h2{
+    padding: 0.5em 0 0 0;
+}
+
+/*3rd div*/
+.preHistory{
+    max-width: 400px;
+    margin: auto;
+}
+
+.preHistoryTitle{
+    background: #FFC82C;
+    height: 2em;
+}
+
+.preHistoryTitle > h3{
+    padding-right: 3.2em;
+    font-size: 1.5em;
+}
+
+.preHistoryTitle > p{
+    padding-top: 0.7em;
+    font-size: 0.8em;
+}
+
+.recent {
+    background-color: #555;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.preHistoryContent{
+    color: #47525E;
+    text-align: center;
+    background: #FFF;
+}
+
+.preHistoryContent > p{
+    font-size: 1em;
+    margin-top: 0.5em
+}
+
+#recentList {
+    padding: 0 0.2em 0.5em 0.2em;
+}
+
+@media screen and (max-width: 600px) {
+    /*header and first div*/
+    .user-status{
+        font-size: 0.8em;
+        padding: 0 2em 1em 2em;
+    }
+
+    /*second div*/
+    .profile-record {
+        margin: 2.5em 0;
+        text-align: center;
+    }
+
+    .record-div{
+        width: 85px;
+        height: 85px;
+        font-size: 1.2em;
+    }
+    
+    .record-div > h2{
+        padding: 0.5em 0 0 0;
+        font-size: 1.2em;
+    }
+  }

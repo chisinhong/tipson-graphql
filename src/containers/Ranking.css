@@ -1,0 +1,43 @@
+/*summry of ranking page*/
+.BestTipster{
+    max-width: 400px;
+    margin: auto;
+}
+
+.BestNext{
+    background: #FFC82C;
+}
+
+.BestNext > h3{
+    padding: 0.1em 5em 0 0;
+    font-size: 1.5em;
+}
+
+.UserBar{
+    background: #FFF;
+    color: #47525E;
+}
+
+.UserBar > img{
+    max-width: 2em;
+    height: auto;
+    margin-left: 0.4em;
+}
+
+.UserBar > a > h2{
+    font-size: 1em;
+    padding-top: 0.3em;
+    color: #47525E;
+}
+
+.userRate{
+    font-size: 1em;
+    padding-top: 0.3em;
+    margin-right: 0.4em;
+}
+
+.worst-tipster{
+    margin-right: 1.2em;  
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,61 @@
+.historyTitle{
+    background: #FFC82C;
+    height: 3em;
+    max-width: 1000px;
+    margin: 2em auto 0 auto;
+}
+
+.historyTitle > p{
+    font-size: 1.3em;
+    padding-top: 0.3em
+}
+
+.react-bs-table-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+thead{
+    background: #FFC82C;
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+td{
+    background: #FFF;
+    color: #47525E;
+    font-size: 1em;
+}
+
+.historyDate{
+    width: 10px;
+}
+
+#pageDropDown{
+    background: #FFF;
+    color: #47525E;
+}
+
+.row{
+    margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    thead{
+        font-size: 0.9em;
+    }
+    
+    td{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    thead{
+        font-size: 0.7em;
+    }
+    
+    td{
+        font-size: 0.7em;
+    }
+}
