@@ -10,7 +10,7 @@
     padding-top: 0.3em
 }
 
-.react-bs-table-container{
+.react-bootstrap-table{
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -37,7 +37,8 @@ td{
 }
 
 .row{
-    margin-right: 0;
+    margin: 1em auto;
+    max-width: 1000px;
 }
 
 @media screen and (max-width: 600px) {

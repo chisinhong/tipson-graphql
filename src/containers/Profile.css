@@ -1,15 +1,15 @@
 /*header and first div*/
-.about-user {
+.aboutUser {
     text-align: center;
     margin-top: -3em;
 }
 
-#user-pic{
-    height: 130px;
+.aboutUser > img {
+    height: 150px;
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .about-info{

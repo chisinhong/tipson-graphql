@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Users } from '../Users';
 import Boxes from '../components/modules/Boxes';
 import PreHistory from '../components/modules/PreHistiory';
+import './Profile.css';
 
 class Profile extends React.Component {
     render() {

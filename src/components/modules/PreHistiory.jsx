@@ -5,7 +5,7 @@ import RecentList from './RecentList';
 class PreHistory extends React.Component {
     render() {
         return (
-            <div className='preHistory d-flex flex-column' id="hihi">
+            <div className='preHistory d-flex flex-column'>
                 <HistoryNext />
                 <div className="preHistoryContent">
                     <p>左為最新</p>

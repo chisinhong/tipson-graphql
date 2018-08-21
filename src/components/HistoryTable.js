@@ -1,27 +1,53 @@
 import React from 'react';
-import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
-import '../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+import BootstrapTable from 'react-bootstrap-table-next';
+import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
+import paginationFactory from 'react-bootstrap-table2-paginator';
+import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css'
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import { Matches } from '../Matches';
 
-const resultType = {
-    0: 'home',
-    1: '唔中',
-  };
-  
-  function enumFormatter(cell, row, enumObject) {
-    return enumObject[cell];
+const selectOptions = {
+  0: 'home',
+  1: '唔中'
+};
+
+const columns = [{
+  dataField: 'matchday',
+  text: '日期',
+  headerStyle: {
+    width: '19%'
   }
-  
-  export default class HistoryTable extends React.Component {
-    render() {
-      return (
-        <BootstrapTable data={ Matches } pagination>
-          <TableHeaderColumn dataField='matchday' width = '19%'>日期</TableHeaderColumn>
-          <TableHeaderColumn dataField='home_team_id' width = '45%' filter={{ type: 'TextFilter' }} isKey>賽事</TableHeaderColumn>
-          <TableHeaderColumn dataField='result' width = '16%'>賽果</TableHeaderColumn>
-          <TableHeaderColumn dataField='result' width = '20%' filterFormatted dataFormat={ enumFormatter } formatExtraData={ resultType }
-            filter={ { type: 'SelectFilter', options: resultType } }>預測</TableHeaderColumn>
-        </BootstrapTable>
-      );
-    }
+}, {
+  dataField: 'home_team_id',
+  text: '賽事',
+  filter: textFilter(),
+  headerStyle: {
+    width: '45%'
   }
+}, {
+  dataField: 'result',
+  text: '賽果',
+  headerStyle: {
+    width: '16%'
+  }
+}, {
+  dataField: 'result',
+  text: '預測',
+  formatter: cell => selectOptions[cell],
+  filter: selectFilter({
+    options: selectOptions,
+  })
+}];
+
+const HistoryTable = () => (
+<BootstrapTable
+  keyField='home_team_id'
+  data={ Matches }
+  columns={ columns }
+  filter={ filterFactory() }
+  pagination={paginationFactory()}
+    />
+)
+
+export default HistoryTable
+

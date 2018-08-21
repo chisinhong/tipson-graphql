@@ -5,7 +5,6 @@ const UserPicture = props => (
         className="rounded-circle img-fluid"
         src = { props.pic }
         alt = "user-pic"
-        id = "user-pic"
     />
 )
 

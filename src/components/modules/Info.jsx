@@ -4,7 +4,7 @@ import UserPicture from '../UserPicture';
 import UserStatus from '../UserStatus';
 
 const Info = props => (
-    <div className="about-user">
+    <div className="aboutUser">
         <UserPicture pic={props.pic} />
         <div className="about-info">
             <UserName name={props.name} className="rounded-circle rounded mx-auto d-block img-fluid" />

@@ -1,11 +1,9 @@
 import React from 'react';
-import BestNext from './BestNext';
 import UserBar from './UserBar';
 
-const BestTipser = ({ Users }) => {
+const Tipser = ({ Users }) => {
     const Top10 = Users.map((user, i) => {
-        return <div className='BestTipster d-flex flex-column'>
-            <BestNext />
+        return <div className='Tipster d-flex flex-column'>
             <UserBar
                 key={i}
                 pic={Users[i].pic}
@@ -21,4 +19,4 @@ const BestTipser = ({ Users }) => {
     );
 }
 
-export default BestTipser
+export default Tipser

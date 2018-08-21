@@ -1,7 +1,9 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import BestTipser from '../components/modules/BestTipser';
+import Tipser from '../components/modules/Tipser';
 import {Users} from '../Users';
+import BestNext from '../components/modules/BestNext';
+import './Ranking.css';
 
 class Ranking extends React.Component {
     render() {
@@ -10,7 +12,11 @@ class Ranking extends React.Component {
                 <header className="d-flex justify-content-center">
                     <h1>排行榜</h1>
                 </header>
-                <BestTipser Users = {Users}/>
+                <BestNext />
+                <Tipser Users = {Users}/>
+                <span className="rankingSpace" />
+                <BestNext />
+                <Tipser Users = {Users}/>
                 <Footer className="footer"/>
             </div>
         )

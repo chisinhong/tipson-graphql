@@ -1,0 +1,31 @@
+.table{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.SearchHeader{
+    background: #FFC82C;
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+.SearchRow{
+    background: #FFF;
+    color: #47525E;
+    font-size: 1em;
+}
+
+.row{
+    margin: 1em auto;
+    max-width: 1000px;
+}
+
+#pageDropDown{
+    background: #FFF;
+    color: #47525E;
+}
+
+.SearchName{
+    color: #47525E;
+}

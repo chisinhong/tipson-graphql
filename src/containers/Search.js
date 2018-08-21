@@ -1,22 +1,20 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import HistoryBack from '../components/modules/HistoryBack';
-import HistoryTable from '../components/HistoryTable';
-import './History.css';
+import UsersTable from '../components/UesrsTable';
+import './Search.css';
 
-class History extends React.Component {
+class Search extends React.Component {
     render() {
         return (
             <div className="content">
                 <header className="d-flex justify-content-center">
-                    <h1>過往預測</h1>
+                    <h1>探索貼神</h1>
                 </header>
-                <HistoryBack />
-                <HistoryTable />
+                <UsersTable />
                 <Footer className="footer"/>
             </div>
         )
     }
 }
 
-export default History
+export default Search

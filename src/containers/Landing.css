@@ -1,0 +1,27 @@
+#landingMain {
+    margin-top: 5em;
+    text-align: center;
+}
+
+#landingH1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 5em;
+}
+
+#landingH2 {
+    font-size: 5em;
+}
+
+#landingH3 {
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+#fb-login {
+    margin-top: 3em;
+}
+
+.trademark {
+    font-size: 0.4em;
+    margin-top: 6em;
+}
