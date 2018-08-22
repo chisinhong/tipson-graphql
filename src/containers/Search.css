@@ -29,3 +29,9 @@
 .SearchName{
     color: #47525E;
 }
+
+.SearchName > img{
+    max-width: 2em;
+    height: auto;
+    margin-left: 0.4em;
+}

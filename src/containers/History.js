@@ -1,16 +1,21 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import HistoryBack from '../components/modules/HistoryBack';
-import HistoryTable from '../components/HistoryTable';
+import Footer from '../components/global/atom/Footer';
+import Title from '../components/global/atom/Title';
+import HistoryBack from '../components/history/modules/HistoryBack';
+import HistoryTable from '../components/history/modules/HistoryTable';
 import './History.css';
 
 class History extends React.Component {
+    constructor(props){
+        super(props)
+
+        this.state={}
+    }
+
     render() {
         return (
             <div className="content">
-                <header className="d-flex justify-content-center">
-                    <h1>過往預測</h1>
-                </header>
+                <Title title={'過往預測'} />
                 <HistoryBack />
                 <HistoryTable />
                 <Footer className="footer"/>

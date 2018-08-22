@@ -1,18 +1,22 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Prediction from '../components/modules/Prediction';
+import Footer from '../components/global/atom/Footer';
+import Prediction from '../components/home/modules/Prediction';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Premier } from '../premier-league';
+import Title from '../components/global/atom/Title';
 
 class Home extends React.Component {
+    constructor(props){
+        super(props)
+
+        this.state = {}
+    }
+
     render() {
         return (
             <div className="content">
-                <header className="d-flex justify-content-center">
-                    <h1>今日預測</h1>
-                </header>
-                <Prediction Premier = { Premier } />
+                <Title title = {'今日預測'} />
+                <Prediction />
                 <Footer className="footer"/>
             </div>
         )

@@ -9,7 +9,7 @@ body {
   font-family: sans-serif;
 }
 
-header {
+.title {
   text-align: center;
   margin: 1em 0 1em 0;
   font-size: 2em;

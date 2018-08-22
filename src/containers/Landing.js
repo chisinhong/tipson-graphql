@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import './Landing.css';
 
 class Landing extends React.Component {
@@ -14,7 +13,6 @@ class Landing extends React.Component {
                 <div class="d-flex justify-content-center">
         <a href="/auth/facebook" class="btn btn-primary fab fa-facebook-square" id="fb-login">Facebook登入</a>
     </div>
-                <Footer className="footer" />
             </div>
         )
     }

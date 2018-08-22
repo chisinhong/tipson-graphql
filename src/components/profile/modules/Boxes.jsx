@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from '../Box';
+import Box from '../atom/Box';
 
 class Boxes extends React.Component {
     render() {

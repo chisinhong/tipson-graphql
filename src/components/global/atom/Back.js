@@ -1,11 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Back = props => (
-    <button className="btn backNext" href = '/Profile'>
+    <Link to = {props.url} className="btn backNext">
         <FontAwesomeIcon icon = { faAngleLeft } />
-    </button>
+    </Link>
 )
 
 export default Back

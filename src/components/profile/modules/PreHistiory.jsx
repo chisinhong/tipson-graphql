@@ -1,5 +1,5 @@
 import React from 'react';
-import HistoryNext from './HistoryNext';
+import HistoryNext from '../atom/HistoryNext';
 import RecentList from './RecentList';
 
 class PreHistory extends React.Component {

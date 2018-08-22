@@ -4,7 +4,7 @@ import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css'
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
-import { Matches } from '../Matches';
+import { Matches } from '../../../Matches';
 
 const selectOptions = {
   0: 'home',

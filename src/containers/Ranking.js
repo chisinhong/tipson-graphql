@@ -1,21 +1,26 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Tipser from '../components/modules/Tipser';
+import Footer from '../components/global/atom/Footer';
+import Tipser from '../components/ranking/modules/Tipser';
 import {Users} from '../Users';
-import BestNext from '../components/modules/BestNext';
+import Title from '../components/global/atom/Title';
+import BestWorst from '../components/ranking/atom/BestWorst';
 import './Ranking.css';
 
 class Ranking extends React.Component {
+    constructor(props){
+        super(props)
+
+        this.state={}
+    }
+
     render() {
         return (
             <div className="content">
-                <header className="d-flex justify-content-center">
-                    <h1>排行榜</h1>
-                </header>
-                <BestNext />
+                <Title title={'排行榜'} />
+                <BestWorst barTitle={'十大貼神'} />
                 <Tipser Users = {Users}/>
                 <span className="rankingSpace" />
-                <BestNext />
+                <BestWorst barTitle={'十大燈神'}/>
                 <Tipser Users = {Users}/>
                 <Footer className="footer"/>
             </div>

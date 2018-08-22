@@ -1,9 +1,9 @@
 import React from 'react';
-import Back from '../Back'
+import Back from '../../global/atom/Back'
 
 const HistoryBack = () => (
     <div className="d-flex justify-content-start historyTitle">
-        <Back />
+        <Back url={'/profile'}/>
         <p>返回</p>
     </div>
 )

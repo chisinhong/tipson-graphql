@@ -1,7 +1,7 @@
 import React from 'react';
-import UserName from '../UserName';
-import UserPicture from '../UserPicture';
-import UserStatus from '../UserStatus';
+import UserName from '../../global/atom/UserName';
+import UserPicture from '../../global/atom/UserPicture';
+import UserStatus from '../atom/UserStatus';
 
 const Info = props => (
     <div className="aboutUser">

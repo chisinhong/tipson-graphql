@@ -1,7 +1,7 @@
 import React from 'react';
-import UserName from '../UserName';
-import UserPicture from '../UserPicture';
-import UserRate from '../UserRate';
+import UserName from '../../global/atom/UserName';
+import UserPicture from '../../global/atom/UserPicture';
+import UserRate from '../../global/atom/UserRate';
 import { Link } from 'react-router-dom';
 
 const UserBar = props => (

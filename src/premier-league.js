@@ -1,4 +1,4 @@
-export const Premier = [{
+export const premier = [{
     "id": 1,
     "league": {
         "id": 1,

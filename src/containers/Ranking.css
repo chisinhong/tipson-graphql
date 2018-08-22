@@ -4,13 +4,13 @@
     margin: auto;
 }
 
-.BestNext{
+.BestWorst{
     background: #FFC82C;
     max-width: 400px;
     margin: auto;
 }
 
-.BestNext > h3{
+.BestWorst > h3{
     font-size: 1.5em;
     margin: auto;
 }

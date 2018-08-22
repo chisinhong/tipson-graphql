@@ -4,7 +4,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 const Next = props => (
-    <Link to="/History" className="btn backNext">
+    <Link to={props.url} className="btn backNext">
         <FontAwesomeIcon icon={faAngleRight} />
     </Link>
 )
