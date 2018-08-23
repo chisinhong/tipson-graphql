@@ -11,7 +11,7 @@ class Prediction extends React.Component {
 
     render() {
         const predictionTeam = this.state.premier.map((team, i) => {
-            return <Match premier = {team} />
+            return <Match key={i} premier = {team} />
         })
         return (
             <div>

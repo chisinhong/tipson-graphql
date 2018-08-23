@@ -9,7 +9,6 @@ import History from './containers/History';
 import Landing from './containers/Landing';
 import Error from './containers/Error';
 
-
 class App extends Component {
   render() {
     return (

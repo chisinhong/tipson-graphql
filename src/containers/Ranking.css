@@ -20,9 +20,9 @@
     color: #47525E;
 }
 
-.UserBar > img{
+.UserBar > .userPic{
     max-width: 2em;
-    height: auto;
+    max-height: 2em;
     margin-left: 0.4em;
 }
 

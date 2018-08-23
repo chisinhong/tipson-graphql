@@ -3,9 +3,8 @@ import UserBar from './UserBar';
 
 const Tipser = ({ Users }) => {
     const Top10 = Users.map((user, i) => {
-        return <div className='Tipster d-flex flex-column'>
+        return <div key={i} className='Tipster d-flex flex-column'>
             <UserBar
-                key={i}
                 pic={Users[i].pic}
                 name={Users[i].name}
                 total={Users[i].total}

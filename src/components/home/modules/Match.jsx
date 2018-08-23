@@ -18,7 +18,7 @@ class Match extends React.Component {
         const premier = this.props.premier
 
         return (
-            <div className="btn-group d-flex justify-content-center" key={this.props.premier.id}>
+            <div className="btn-group d-flex justify-content-center">
                 <Team id={premier.id} badge={premier.badge} zhName={premier.zhName} clicked={this.state.leftClicked} onClick={() => this.changeColor('left')} />
                 <Draw clicked={this.state.midClicked} onClick={() => this.changeColor('mid')} />
                 <Team id={premier.id} badge={premier.badge} zhName={premier.zhName} clicked={this.state.rightClicked} onClick={() => this.changeColor('right')} />
