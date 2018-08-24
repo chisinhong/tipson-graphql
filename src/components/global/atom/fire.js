@@ -8,6 +8,13 @@ const config = {
     storageBucket: "tipson-react.appspot.com",
     messagingSenderId: "578938076990"
 };
-firebase.initializeApp(config);
+const fire = firebase.initializeApp(config);
+export default fire
 
-export default firebase;
+export const provider = new firebase.auth.FacebookAuthProvider();
+export const ref = firebase.database().ref()
+export const auth = firebase.auth
+firebase.auth().languageCode = 'zh_HK'
+provider.setCustomParameters({
+    'display': 'popup'
+  });

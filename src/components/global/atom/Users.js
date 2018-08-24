@@ -1,5 +1,5 @@
 import React from 'react';
-import firebase from './firebase';
+import fire from './fire';
 
 class Users extends React.Component{
     constructor(){
@@ -19,7 +19,7 @@ class Users extends React.Component{
 
     addUser = e => {
         e.preventDefault();
-        const db = firebase.firestore();
+        const db = fire.firestore();
         db.settings({
             timestampsInSnapshots: true
         });

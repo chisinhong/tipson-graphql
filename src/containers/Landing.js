@@ -1,7 +1,6 @@
 import React from 'react';
 import './Landing.css';
-import Users from '../components/global/atom/Users'
-import GoogleLogIn from '../components/landing/atom/GoogleLogIn'
+import FacebookLogIn from '../components/landing/atom/FacebookLogIn'
 
 class Landing extends React.Component {
     render() {
@@ -12,8 +11,7 @@ class Landing extends React.Component {
                     <h2 id="landingH2">貼神</h2>
                     <h3 id="landingH3">鍵盤足球專家</h3>
                 </main>
-                <GoogleLogIn />
-                <Users />
+                <FacebookLogIn />
             </div>
         )
     }

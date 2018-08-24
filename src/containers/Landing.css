@@ -17,8 +17,14 @@
     margin-top: 2em;
 }
 
-#fb-login {
-    margin-top: 3em;
+.login {
+    margin: 3em auto;
+    width: 10em;
+}
+
+
+.login > svg{
+    margin-top: 0.2em;
 }
 
 .trademark {
